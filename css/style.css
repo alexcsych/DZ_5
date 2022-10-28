@@ -76,11 +76,6 @@ header h1 {
   padding: 2em 1em 1em;
 }
 
-.section-b ul {
-  display: flex;
-  justify-content: space-around;
-}
-
 .section-b li {
   margin-bottom: 1em;
   background: #fff;
@@ -97,6 +92,33 @@ img {
   padding: 1.5em;
 }
 
+.section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+.section-d .container:first-child {
+  background: #2690d4;
+}
+
+.section-d .container {
+  padding: 2em;
+  color: #fff;
+}
+
+/* footer */
+.main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.myMail {
+  color: #2690d4;
+}
+
 /* Adaptiv */
 @media (min-width: 700px) {
   .grid {
@@ -110,12 +132,19 @@ img {
     columns: 2;
     column-gap: 2em;
   }
-
   .content,
   .section-b ul {
     grid-column: 2/4;
   }
+  .section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
   .section-b li {
     width: 31%;
+  }
+  .container,
+  .main-footer div {
+    grid-column: span 2;
   }
 }
