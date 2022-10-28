@@ -11,6 +11,7 @@ body {
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
+  min-width: 400px;
 }
 
 /* header */
@@ -78,6 +79,22 @@ header h1 {
 .section-b ul {
   display: flex;
   justify-content: space-around;
+}
+
+.section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1.5em;
 }
 
 /* Adaptiv */
