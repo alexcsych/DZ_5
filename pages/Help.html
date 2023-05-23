@@ -6,16 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Help</title>
     <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/body.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/Help.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../owl-icon.png" />
   </head>
   <body>
     <nav>
-      <h1>🦉</h1>
+      <h1 class="logo">🦉</h1>
       <ul class="nav-href">
         <li><a class="nav-a" href="../index.html">Home</a></li>
         <li><a class="nav-a" href="./About-Us.html">About Us</a></li>
@@ -23,18 +19,84 @@
         <li><a class="nav-a" href="./Help.html">Help</a></li>
       </ul>
     </nav>
-    <header class="grid">
-      <div class="bg-image"></div>
-      <div class="content">
-        <h1>🦉Support🦉</h1>
-        <p class="header-p">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
-          minima eius, natus rem quis esse voluptatibus laborum officiis!
-          Similique quis ad ducimus.
-        </p>
+    <header class="bg-image-help">
+      <div class="grid filter">
+        <div class="content">
+          <h1>🦉Support🦉</h1>
+          <p class="header-p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,
+            veniam. Minima culpa maiores quia tempora amet aliquid quaerat dicta
+            placeat.
+          </p>
+        </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="section-c grid">
+        <div class="content">
+          <h2>Solutions of technical problems</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+            dolore facere blanditiis eius et exercitationem suscipit, vel
+            reiciendis tempora magni impedit repellat quia nam nulla excepturi
+            enim est perferendis distinctio cum quis sint optio eveniet ex.
+            Maxime eum temporibus corporis vero officiis. Maiores harum illo
+            quisquam libero nemo, nesciunt non.
+          </p>
+        </div>
+      </section>
+      <section class="section-b grid" id="cards" style="background: #2690d4">
+        <ul>
+          <li>
+            <div class="card-content">
+              <h3>Checking the connection</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                perferendis magni incidunt assumenda tenetur nemo.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="card-content">
+              <h3>Search for information</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                perferendis magni incidunt assumenda tenetur nemo.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="card-content">
+              <h3>Contacting the support service</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                perferendis magni incidunt assumenda tenetur nemo.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section-c1 grid">
+        <form class="content" action="Help.html">
+          <div class="form-content">
+            <p>Your Name</p>
+            <input type="text" name="name" />
+            <p>Your Email</p>
+            <input type="email" name="email" />
+            <p>Select a category</p>
+            <select name="select">
+              <option selected>problem1</option>
+              <option>problem2</option>
+              <option>problem3</option>
+              <option>problem4</option>
+            </select>
+            <p>Describe the problem</p>
+            <textarea name="message" rows="20" cols="40"></textarea>
+            <button class="btn-sumbit" type="submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
     <footer class="main-footer grid">
       <div>🦉IT OWL🦉</div>
       <div>

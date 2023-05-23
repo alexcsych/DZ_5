@@ -113,13 +113,22 @@ nav h1 {
 
 /* header */
 header {
-  min-height: 320px;
+  min-height: 200px;
   color: var(--primary-color);
   text-align: center;
+  /* opacity: 0.8; */
 }
 
 header .content {
-  padding: 0 1.5em 2em;
+  padding: 0 1.5em 4em;
+}
+
+.bg-image .filter {
+  background-color: rgba(73, 73, 73, 0.4);
+}
+
+.bg-image-help .filter {
+  background-color: rgba(73, 73, 73, 0.6);
 }
 
 h1,
@@ -151,7 +160,14 @@ header h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -1;
+}
+
+.bg-image-help {
+  background: var(--main-color)
+    url(https://cpsltd.ch/wp-content/uploads/2018/10/support2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* main */
@@ -185,6 +201,53 @@ img {
   background: var(--primary-color);
   color: var(--main-color);
   padding: 2em;
+}
+
+.section-c1 {
+  color: var(--primary-color);
+  background: var(--main-color);
+  padding: 2em;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+  margin: auto;
+}
+
+form input,
+form select,
+form textarea {
+  background: #ffffff;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  height: 55px;
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #324950;
+}
+
+.btn-sumbit {
+  all: unset;
+  background: #2690d4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+  color: #ffffff;
+  max-width: 255px;
+  max-height: 55px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+form textarea {
+  height: 387px;
 }
 
 .section-d .container:first-child {
