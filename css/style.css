@@ -1,3 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #333;
+  --primary-main-color: rgb(34, 33, 33);
+  --primary-color: #fff;
+  --primary-second-color: #2690d4;
+}
+
+/* body */
+body {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--main-color);
+  color: var(--primary-color);
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+  min-width: 320px;
+  padding-top: 50px;
+}
+
+/* Adaptiv */
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  .main-footer div {
+    grid-column: span 2;
+  }
+
+  .content {
+    grid-column: 2/4;
+  }
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: var(--primary-main-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.logo {
+  display: none;
+}
+
+nav h1 {
+  padding: 0;
+}
+
+.nav-href {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: var(--main-color);
+  background-color: var(--primary-color);
+  padding: 10px 10px;
+  font-size: 16px;
+  position: relative;
+}
+
+.nav-a::before,
+.nav-a::after {
+  content: '';
+  width: 0;
+  transition: width 0.5s;
+  position: absolute;
+  height: 3px;
+}
+
+.nav-a::before {
+  right: 0;
+  top: 0;
+  background-image: linear-gradient(to left, rgb(62, 226, 255), rgb(4, 0, 255));
+}
+
+.nav-a::after {
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    rgb(62, 226, 255),
+    rgb(4, 0, 255)
+  );
+}
+
+.nav-a:hover,
+.nav-a:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-main-color);
+}
+
+.nav-a:hover::before,
+.nav-a:hover::after {
+  content: '';
+  width: 100%;
+}
+
+/* header */
+header {
+  min-height: 320px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+header .content {
+  padding: 0 1.5em 2em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+header h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+.button {
+  display: inline-block;
+  background: #333;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+}
+
+.bg-image {
+  background: var(--main-color)
+    url(https://static.pexels.com/photos/248515/pexels-photo-248515.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -1;
+}
+
 /* main */
 .section-a {
   background-color: var(--primary-color);
@@ -38,6 +194,18 @@ img {
 .section-d .container {
   padding: 2em;
   color: var(--primary-color);
+}
+
+/* footer */
+.main-footer {
+  padding: 2em;
+  background: #000;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.myMail {
+  color: var(--primary-second-color);
 }
 
 /* Adaptiv */
