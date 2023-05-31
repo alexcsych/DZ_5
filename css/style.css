@@ -48,6 +48,7 @@ nav {
   top: 0px;
   background-color: var(--primary-main-color);
   border-bottom: 1px solid var(--primary-color);
+  z-index: 5;
 }
 
 .logo {
@@ -131,6 +132,10 @@ header .content {
   background-color: rgba(73, 73, 73, 0.6);
 }
 
+.bg-image-about .filter {
+  background-color: rgba(73, 73, 73, 0.6);
+}
+
 h1,
 h2,
 h3,
@@ -165,6 +170,14 @@ header h1 {
 .bg-image-help {
   background: var(--main-color)
     url(https://cpsltd.ch/wp-content/uploads/2018/10/support2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image-about {
+  background: var(--main-color)
+    url(https://students.kpfu.ru/sites/default/files/inline-images/image-13-07-20-10-22%281%29.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -257,6 +270,25 @@ form textarea {
 .section-d .container {
   padding: 2em;
   color: var(--primary-color);
+}
+
+/* .section-c .video-container {
+  padding: 1em;
+} */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* footer */
