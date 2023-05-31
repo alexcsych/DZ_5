@@ -136,6 +136,10 @@ header .content {
   background-color: rgba(73, 73, 73, 0.6);
 }
 
+.bg-image-price .filter {
+  background-color: rgba(73, 73, 73, 0.7);
+}
+
 h1,
 h2,
 h3,
@@ -183,6 +187,14 @@ header h1 {
   background-size: cover;
 }
 
+.bg-image-price {
+  background: var(--main-color)
+    url(https://www.techrepublic.com/wp-content/uploads/2018/07/istock-849858410-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* main */
 .section-a {
   background-color: var(--primary-color);
@@ -217,10 +229,17 @@ img {
 }
 
 .section-c1 {
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--main-color);
+  padding: 2em 0;
+}
+
+.section-c2 {
   background: var(--main-color);
+  color: var(--primary-color);
   padding: 2em;
 }
+
 .form-content {
   display: flex;
   flex-direction: column;
@@ -272,10 +291,6 @@ form textarea {
   color: var(--primary-color);
 }
 
-/* .section-c .video-container {
-  padding: 1em;
-} */
-
 .video-container {
   position: relative;
   width: 100%;
@@ -289,6 +304,43 @@ form textarea {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+th,
+td {
+  border: 1px solid var(--main-color);
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--primary-color);
+  background-color: var(--primary-second-color);
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--main-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+tr:nth-child(odd) > td:nth-child(even) {
+  border: 2px solid var(--primary-color);
+}
+
+tr:nth-child(odd) > td:nth-child(odd) {
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+tr:nth-child(even) > td:nth-child(even) {
+  border-left: 2px solid var(--primary-color);
+  border-right: 2px solid var(--primary-color);
 }
 
 /* footer */
